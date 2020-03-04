@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Emblema One;
+    src: url("EmblemaOne-Regular.ttf");
+}
+@media screen and (min-width:100px){
+    body{
+        color: maroon;
+        font-size: 14px;
+    }
+    body p.green-teen{
+        font-family: Emblema One, sans-serif;
+        color: grey;
+    }
+
+    h1{
+        font-size: 150%;
+        border-bottom: 1px solid black;
+    }
+    h2{
+        font-size: 1.2em;
+        border-bottom: 1px solid black;
+    }
+
+    /*这是注释*/
+    em {
+        font-weight: inherit;
+        letter-spacing: 2px;
+    }
+
+    p.green-teen {
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: dashed;
+        font-family: Courier New, monospace;
+        color: green;
+    }
+
+    .green-teen {
+        color: green;
+    }
+}

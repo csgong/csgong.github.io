@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>已读文章 on My Learn Notes</title>
+    <link>https://csgong.github.io/readed-articles/</link>
+    <description>Recent content in 已读文章 on My Learn Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Feb 2019 13:40:36 +0800</lastBuildDate>
+    
+	<atom:link href="https://csgong.github.io/readed-articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript相关文章</title>
+      <link>https://csgong.github.io/readed-articles/css-list/</link>
+      <pubDate>Wed, 27 Feb 2019 13:40:36 +0800</pubDate>
+      
+      <guid>https://csgong.github.io/readed-articles/css-list/</guid>
+      <description>What actually is CSS-in-JS? [] 这是为数不多的讲解为什么使用CSS-in-JS的文章，作者列举了CSS的不足以及CSS-in-JS是如何消除这些不足的 阮老师也写过一篇关于CSS-in-JS的文章，内容是CSS-in-JS的简介
+Stop using CSS in JavaScript for web development[] 这篇文章一一列举了styled-components解决的所谓CSS的痛点都是不成立的。 TODO: 命名规范BEM , 腾讯BEM书写规范, styled-components使用, CSS modules
+Why I Write CSS in JavaScript[] 这篇文章是styled-components的作者写的，文章列举了使用CSS-in-js的好处
+Oh No! Our Stylesheet Only Grows and Grows and Grows! (The Append-Only Stylesheet Problem)[] 这篇文章主要说明了面对日益增大的css文件，消除无用的css是艰难的（虽然有工具），但是我们可以使用Atomic CSS和css-in-js解决这个问题 styled-components的作者写的，文章列举了使用CSS-in-js的好处</description>
+    </item>
+    
+    <item>
+      <title>JavaScript相关文章</title>
+      <link>https://csgong.github.io/readed-articles/js-list/</link>
+      <pubDate>Wed, 27 Feb 2019 13:40:36 +0800</pubDate>
+      
+      <guid>https://csgong.github.io/readed-articles/js-list/</guid>
+      <description>Using JavaScript Generators to yield Promises [] 该文章主要讲述了在CPS编程风格中，使用callbacks有哪些不好的地方， 以及如何利用Promises和 Generators 配合作者自己写的async function解决这些问题， 相同的解决方案还有co， 在async/await出来后，这些问题都得到了解决。 TODO: CPS概念,co,作者的async是如何实现的</description>
+    </item>
+    
+  </channel>
+</rss>

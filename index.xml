@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sinclair&#39;s Blog on My Learn Notes</title>
+    <link>https://csgong.github.io/</link>
+    <description>Recent content in Sinclair&#39;s Blog on My Learn Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Feb 2019 13:40:36 +0800</lastBuildDate>
+    
+	<atom:link href="https://csgong.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>fetch</title>
+      <link>https://csgong.github.io/javascript/fetch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/javascript/fetch/</guid>
+      <description>fetch是HTML5提供的新的加载资源的方法，相对于XMLHttpRequest，fetch更加强大和灵活。
+一.请求request fetch方法的语法为 fetch(input,[init]),fetch方法内部会使用这两个参数构造 Request对象，所以可以简单的将fetch语法理解为fetch(Request request)。
+fetch方法使用Request对象请求资源，Request对象的构造方法为Request(input,[init])， input可以是资源地址，也可以是Request对象，init是可选的参数对象，如果input为Request对象，则init会和input对象的属性合并。 一个简单的fetch请求如下所示：
+fetch(&amp;#39;demo.json&amp;#39;).then(function(response) {return response.json();}).then(function(myJson) {console.log(myJson);});带配置的请求：
+fetch(&amp;#39;demo.json&amp;#39;,{method:&amp;#34;POST&amp;#34;,}).then(function(response) {return response.json();}).then(function(myJson) {console.log(myJson);});使用Request对象构造请求
+const req = Request(&amp;#39;demo.json&amp;#39;,{method:&amp;#34;post&amp;#34;});fetch(req,{method:&amp;#34;POST&amp;#34;,}).then(function(response) {return response.json();}).then(function(myJson) {console.log(myJson);});1.header header是http请求的头部，可以使用init设置请求的头部信息。
+const init = {headers: {&amp;#39;content-type&amp;#39;: &amp;#39;application/json&amp;#39;,&amp;#39;Content-Length&amp;#39;:&amp;#39;10&amp;#39;}}也可以使用Headers对象来创建一个你自己的 headers 对象
+let headers = new Headers();let content = &amp;#34;Hello World&amp;#34;;headers.</description>
+    </item>
+    
+    <item>
+      <title>Flex 布局</title>
+      <link>https://csgong.github.io/csshtml/css/flex-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/css/flex-layout/</guid>
+      <description>flex 布局 Flex 是 Flexible Box 的缩写，意为&amp;quot;弹性布局&amp;rdquo;，用来为盒状模型提供最大的灵活性, 采用 Flex 布局的元素，称为 Flex 容器（flex container），简称&amp;quot;容器&amp;rdquo;。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称&amp;quot;项目&amp;rdquo;。 flex container 包含6个属性：
+ 1.flex-direction  flex-direction属性决定flex item在主轴的排列方向,可选值有row | row-reverse | column | column-reverse
+ 2.flex-wrap  默认情况下，项目都排在一条线（又称&amp;quot;轴线&amp;rdquo;）上。flex-wrap属性定义，如果一条轴线排不下，如何换行 可选的值有 nowrap | wrap | wrap-reverse;
+ 3.flex-flow  flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap
+ 4.justify-content  属性定义了项目在主轴上的对齐方式。可选值有flex-start | flex-end | center | space-between | space-around
+ 5.align-items  属性定义项目在交叉轴上如何对齐,可选的值有 flex-start | flex-end | center | baseline | stretch</description>
+    </item>
+    
+    <item>
+      <title>window</title>
+      <link>https://csgong.github.io/csshtml/html/window/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/html/window/</guid>
+      <description>Base64 utility methods The atob() and btoa() methods allow developers to transform content to and from the base64 encoding.
+ atob() base64 to text btoa() text to text base64  </description>
+    </item>
+    
+    <item>
+      <title>伪类</title>
+      <link>https://csgong.github.io/csshtml/css/pseudo-classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/css/pseudo-classes/</guid>
+      <description>a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive
+参考文档 https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes</description>
+    </item>
+    
+    <item>
+      <title>元素</title>
+      <link>https://csgong.github.io/csshtml/html/element/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/html/element/</guid>
+      <description>html html文档的根元素，可以通过document.documentElement获取到html元素。
+特有属性:
+ lang 推荐html元素要指定lang属性 manifest manifest属性用于缓存  head document的元数据集合，包含 base，link，meta，noscript，script，style，template，title，其中base和title不多于一个，可以通过document.head获取到head元素。
+title document的标题或名称,可以通过document.title来设置title
+base base用于指定document中所有的链接的默认browsing context。每个文档中不得包含多个 base 元素。
+属性:
+ href 规定页面中所有相对链接的基准URL,这其中包括、、、标签中的URL target 在何处打开页面中所有的链接,可选的值有_blank，_self，_top，_framename  &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;This is an example for the &amp;amp;lt;base&amp;amp;gt; element&amp;lt;/title&amp;gt;&amp;lt;base href=&amp;#34;https://www.example.com/news/index.html&amp;#34; target=&amp;#34;_self&amp;#34;&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;link1 &amp;lt;a href=&amp;#34;archives.html&amp;#34;&amp;gt;link1&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;link2 &amp;lt;a href=&amp;#34;https://www.aaa.com&amp;#34;&amp;gt;link2&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;上面例子中link1的链接地址是 &amp;ldquo;https://www.example.com/news/archives.html&amp;quot;, link2由于是绝对地址，所以它的地址没有变化，还是https://www.aaa.com，link1和link2的打开方式都是_self。 _blank, _self, _parent, or _top
+q &amp;amp; blockquote &amp;amp; cite &amp;lt;q&amp;gt;（quotation）是inline元素，适用短引用，默认会渲染成带有“”的一小段文字
+&amp;lt;blockquote&amp;gt;是block元素，适用长的引用。&amp;lt;blockquote&amp;gt;默认会想染成带有缩进的单独一段内容
+&amp;lt;cite&amp;gt; 标签通常表示它所包含的文本对某个参考文献的引用，比如书籍或者杂志的标题。 按照惯例，引用的文本将以斜体显示,例如：</description>
+    </item>
+    
+    <item>
+      <title>各种css hack</title>
+      <link>https://csgong.github.io/csshtml/css/hacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/css/hacks/</guid>
+      <description>清除浮动（clearfix hack） 如果一个浮动的元素的高度超过了它所在的容器，那么浮动元素就会溢出。
+解决方案：给容器添加如下样式
+.clearfix {overflow: auto;}overflow方法有可能出现滚动条问题，更加好的hack方式如下：
+.clearfix::after {content: &amp;#34;&amp;#34;;clear: both;display: table;}</description>
+    </item>
+    
+    <item>
+      <title>基础</title>
+      <link>https://csgong.github.io/csshtml/css/base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/css/base/</guid>
+      <description>合并多个类 css中如果多个类有相同的样式，可以将他们合并起来，以逗号分开
+body,h1 .title{}层叠 层叠是CSS的一个基本特征，它是一个定义了如何合并来自多个源的属性值的算法,浏览器则使用哪个属性取决于选择器的优先级 选择器的优先级顺序为（递增）：
+ 类型选择器（type selectors）（例如, h1）和 伪元素（pseudo-elements）（例如, ::before） 类选择器（class selectors） (例如,.example)，属性选择器（attributes selectors）（例如, [type=&amp;quot;radio&amp;rdquo;]），伪类（pseudo-classes）（例如, :hover） ID选择器（例如, #example）  《Head First HTML与CSS 第2版》中给出的计算优先级的方法很直观，方法如下： 给定三位数 0 0 0 ，分别代表ID选择器，类选择器和类型选择器的权重，如果选择器包含ID选择器，则百位+1，如果选择器包含类或者伪类，则十位+1，如果选择器包含类型选择器，则个位+1， 多级选择器拆开后累加,例如：
+body h1.selected {color:blue; }.selected {color:red; }body h1.selected这个选择器计算后的总权重为 012(010 + 001+ 001),而.selected的总权重为 010,12&amp;gt;1，所以body h1.selected优于.selected。
+margin collapsing margin collapsing是指block元素的上下外边距会合并成一个外边距。浮动元素和绝对定位元素不会合并。 通常满足如下三种情况时，就会发生合并：
+  1.毗邻(Adjacent siblings)
+两个block元素上下毗邻，中间没有被其他内容分开，就会发生margin collapsing
+  &amp;lt;!--段落1 的 margin-bottom 与段落2的margin-top合并为一个值(20)--&amp;gt;&amp;lt;p style=&amp;#34;margin-bottom: 20px&amp;#34;&amp;gt;段落1&amp;lt;/p&amp;gt;&amp;lt;p style=&amp;#34;margin-top: 20px&amp;#34;&amp;gt;段落2&amp;lt;/p&amp;gt;  2.</description>
+    </item>
+    
+    <item>
+      <title>属性</title>
+      <link>https://csgong.github.io/csshtml/css/properties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/css/properties/</guid>
+      <description>字体 网页常用字体通常分为5类，每个类都包含很多字体，分别如下：
+  sans-serif
+字体在字符笔画末端没有任何细节，与serif字体相比，他们的外形更简单包含Verdana、Arial、Geneva、Arial Black Trebuchet MS
+  serif
+字体在字符笔画末端有叫做衬线的小细节，这些细节在大写字母中特别明显,包含Times、Times New Roman、Georgia、宋体、微软雅黑等
+  monospace
+字体，每个字母的宽度相等，通常用于计算机相关书籍中排版代码块，包含Courier、Courier New、Andale Mono等
+  cursive
+字体在浏览器中不常用，在各个浏览器中有明显的差异，包含Comic Sans、Apple Chancery Comic Sans、Apple Chancery
+  fantasy
+字体在浏览器中不常用，在各个浏览器中有明显的差异，包含Impact
+  1.使用字体 可以使用font-family指定一系列字体，通常最后一个字体是通用的字体类名称。 除了使用这些字体外，还可以使用web字体，web字体格式有.ttf、.otf、eot、.svg、.woff。 web字体可以通过css的@font-face规则使用
+@font-face {font-family: Emblema One;/*指定一个字体名称，可以是你喜欢的任意名称，但通常与字体名一致*/src: url(&amp;#34;EmblemaOne-Regular.ttf&amp;#34;);/*可以是本地地址或者web服务器上的一个地址*/}/*一旦使用@font-face加载了字体，接下来就可以通过名称使用这个字体了*/body {font-family: Emblema One,sans-serif;}2.设置字体大小 使用font-size设置字体大小，值有如下几种：
+  px
+用像素指定字体大小，就是高速浏览器字体高度是多少像素
+  em
+em是一个相对单位，当你设置h1的字体大小是1.2em时，假设你设置了其父元素body的字体大小是14px,则h1的字体大小就是1.2*14px
+  %
+使用%指定字体大小时，是相对其父元素的，如果父元素是14px,则150%则是相对父元素的150%，也就是150% *14px</description>
+    </item>
+    
+    <item>
+      <title>布局</title>
+      <link>https://csgong.github.io/csshtml/css/layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/css/layout/</guid>
+      <description>基本布局 居中布局 block元素在指定了宽度后，可以设置margin:0 auto使其水平居中 宽度可以设置width或者max-width,如果设置width后，当窗口小于给定值时，会出现水平滚动条，设置max-width可以解决这个问题。
+参考如下链接 https://segmentfault.com/a/1190000011358507 https://segmentfault.com/a/1190000008789039 https://github.com/amfe/lib-flexible http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html https://developer.mozilla.org/zh-CN/docs/Web/CSS/Layout_mode http://zh.learnlayout.com/ https://juejin.im/post/599970f4518825243a78b9d5 https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6%EF%BC%9A</description>
+    </item>
+    
+    <item>
+      <title>常见的单词</title>
+      <link>https://csgong.github.io/english/common_english_word/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/english/common_english_word/</guid>
+      <description>##</description>
+    </item>
+    
+    <item>
+      <title>盒模型</title>
+      <link>https://csgong.github.io/csshtml/css/box-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/css/box-model/</guid>
+      <description>概念  The CSS box model describes the rectangular boxes that are generated for elements in the document tree and laid out according to the visual formatting model.
+ 简单理解就是盒模型描述的是元素在页面中所占据的空间，包含元素本身内容大小，内边距，边框，外边距
+关于元素的长度和高度 元素的宽度是（元素内容宽度 + 内边距+边框），当你设置宽度时，元素真实所占的宽度可能会大于你给定的值， 元素的宽度还需要通过计算才能得出，不够直接，为了解决这个问题，可以使用CSS中的box-sizing属性。 box-sizing有两个值，默认为content-box，也就是标准的盒子模型。 另一个选项是border-box,如果设置了border-box，则设置的width值= border + padding + 内容的宽度， 元素的高度同款度一样，不再赘述。
+&amp;lt;style&amp;gt;.simple{width: 500px;margin: 20px auto;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}.fancy {width: 500px;margin: 20px auto;padding: 50px;border: solid blue 10px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}&amp;lt;/style&amp;gt;&amp;lt;div class=&amp;#34;simple&amp;#34;&amp;gt;应用了simple的div&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;#34;fancy&amp;#34;&amp;gt;应用了fancy的div&amp;lt;/div&amp;gt;由于这种设置尺寸的方式更直观，所以甚至有人建议将所有元素元素都设置为border-box。</description>
+    </item>
+    
+    <item>
+      <title>选择器</title>
+      <link>https://csgong.github.io/csshtml/css/selectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/css/selectors/</guid>
+      <description>css 选择器 介绍css的各种选择器 https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Selectors https://www.w3cplus.com/css3/basic-selectors http://www.ruanyifeng.com/blog/2009/03/css_selectors.html https://css4-selectors.com/selector/css4/relational-pseudo-class/ pseudo class</description>
+    </item>
+    
+    <item>
+      <title>从文章中获取的单词</title>
+      <link>https://csgong.github.io/english/english_word_from_article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/english/english_word_from_article/</guid>
+      <description>-ish 该词来源于我对“函数是一等公民”的来源搜索中看到的，意思为有一點、一點點、（時間或數目上）&amp;hellip;多， 当人们对某件事吃不准，或不愿直说的情况下的可以用它表示。
+用法：接在形容詞、名詞、片語等後面都可以，有時甚至單獨用。
+發音：跟 &amp;ldquo;childish&amp;rdquo;, &amp;ldquo;foolish&amp;rdquo; 後面的 &amp;ldquo;ish&amp;rdquo; 發音一樣。
+例子：
+A: Hungry? （餓嗎？）B: Yeah, ish. （嗯，一點點。）A: When is the party? （party幾點開始啊？）B: 8-ish, I think. （我想八點多吧）A: How many people are going? （多少人要去？）B: I don&amp;#39;t know, 30ish, maybe? （不知道，大概30幾個吧）</description>
+    </item>
+    
+    <item>
+      <title>Good Software</title>
+      <link>https://csgong.github.io/other/awesomes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/other/awesomes/</guid>
+      <description>我的装机必备软件 编程  webstorm  简介：强大的集成开发环境 配置：无 授权：需要破解    浏览器   chrome
+  简介：强大的浏览器
+  配置：
+好的插件有： 绿色搜索、Mercury Reader、Mercury Reader、Proxy SwitchyOmega、Checker Plus for Gmail、feedly Mini、IDM Integration Module、Octotree、Save to Pocket、懒人比价购物助手、网易有道词典鼠标取词插件、Adblock Plus,修改下载路径
+  授权：免费
+    影音  potplayer  简介：视频播放器 配置：无 授权：免费   网易云音乐  简介：mp3播放器 配置：修改缓存路径，更换皮肤 授权：免费    工具  foxmail  简介：邮件客户端 配置：开机启动以及添加gcsnc@qq.com账号 授权：免费   listary  简介：强大的搜索软件 配置：无 授权：需要破解   IDM  简介：强大的下载器 配置：无 授权：已经购买，账号存储于google mail 中   AIDA64  简介：硬件检测以及跑分工具 配置：无 授权：需要破解   Beyond Compare 3  简介：文件/文件夹对比工具 配置：无 授权：需要破解   DiskGenius  简介：硬盘分区工具 配置：无 授权：需要破解   Fiddler  简介：抓包工具 配置：无 授权：免费    文本编辑  typora  简介：markdown编辑器 配置：无 授权：免费   notepad++  简介：文本编辑器 配置：无 授权：免费    存储  google drive  简介：google 云盘 配置：无 授权：免费    阅读  kindle  简介：电子书阅读器，主要用于阅读pdf 配置：无 授权：免费    </description>
+    </item>
+    
+    <item>
+      <title>Plan for 2020</title>
+      <link>https://csgong.github.io/other/plans-for-2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/other/plans-for-2020/</guid>
+      <description>polymer webassembly 小程序 vue webpack nodejs css Sass PostCSS CSS Naming Scheme（BEM or SUIT） CSS Linters AutoPrefixer，Modernizr NPM Scripts Lodash Babel TypeScript ESLint Jest Mocha Enzyme Lighthouse Netlify https://www.cnblogs.com/codernie/p/9062104.html https://zhuanlan.zhihu.com/p/31416527 JHipster </description>
+    </item>
+    
+    <item>
+      <title>JavaScript相关文章</title>
+      <link>https://csgong.github.io/readed-articles/css-list/</link>
+      <pubDate>Wed, 27 Feb 2019 13:40:36 +0800</pubDate>
+      
+      <guid>https://csgong.github.io/readed-articles/css-list/</guid>
+      <description>What actually is CSS-in-JS? [] 这是为数不多的讲解为什么使用CSS-in-JS的文章，作者列举了CSS的不足以及CSS-in-JS是如何消除这些不足的 阮老师也写过一篇关于CSS-in-JS的文章，内容是CSS-in-JS的简介
+Stop using CSS in JavaScript for web development[] 这篇文章一一列举了styled-components解决的所谓CSS的痛点都是不成立的。 TODO: 命名规范BEM , 腾讯BEM书写规范, styled-components使用, CSS modules
+Why I Write CSS in JavaScript[] 这篇文章是styled-components的作者写的，文章列举了使用CSS-in-js的好处
+Oh No! Our Stylesheet Only Grows and Grows and Grows! (The Append-Only Stylesheet Problem)[] 这篇文章主要说明了面对日益增大的css文件，消除无用的css是艰难的（虽然有工具），但是我们可以使用Atomic CSS和css-in-js解决这个问题 styled-components的作者写的，文章列举了使用CSS-in-js的好处</description>
+    </item>
+    
+    <item>
+      <title>JavaScript相关文章</title>
+      <link>https://csgong.github.io/readed-articles/js-list/</link>
+      <pubDate>Wed, 27 Feb 2019 13:40:36 +0800</pubDate>
+      
+      <guid>https://csgong.github.io/readed-articles/js-list/</guid>
+      <description>Using JavaScript Generators to yield Promises [] 该文章主要讲述了在CPS编程风格中，使用callbacks有哪些不好的地方， 以及如何利用Promises和 Generators 配合作者自己写的async function解决这些问题， 相同的解决方案还有co， 在async/await出来后，这些问题都得到了解决。 TODO: CPS概念,co,作者的async是如何实现的</description>
+    </item>
+    
+    <item>
+      <title>Chrome Dev Tips</title>
+      <link>https://csgong.github.io/chrome/chrome-dev-tips/</link>
+      <pubDate>Tue, 26 Feb 2019 14:41:16 +0800</pubDate>
+      
+      <guid>https://csgong.github.io/chrome/chrome-dev-tips/</guid>
+      <description>copy object as string copy(someObj) on elements panel you can copy any element path:right click -&amp;gt; copy-&amp;gt;copy js path you can get document.querySelector(some element)
+#on network panel you can copy xhr response :select link then right click -&amp;gt; copy-&amp;gt;copy response
+you can get connection information by window.navigator.connection New in Chrome 73: Code folding. Enable it via Settings &amp;gt; Preferences &amp;gt; Sources &amp;gt; Code folding </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/html/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/html/01/</guid>
+      <description>//判断浏览器是否支持 Microdata APIfunction supports_microdata_api() {return !!document.getItems;}window.onload=function(){if(supports_microdata_api){//访问Microdata DOM APIvar user = document.getItems(&#39;http://data-vocabulary.org/Person&#39;)[0];alert(&#39;Hi,I am &#39; + user.properties[&#39;name&#39;][0].itemValue + &#39;!&#39;);}}nanpingwanzhongMy Blog</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/test/a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/test/a/</guid>
+      <description>Titlewindow.onpopstate = function(event) {alert(&#34;location: &#34; + document.location + &#34;, state: &#34; + JSON.stringify(event.state));};a tiaozhuan</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/test/b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/test/b/</guid>
+      <description>Titlewindow.onpopstate = function(event) {alert(&#34;location: &#34; + document.location + &#34;, state: &#34; + JSON.stringify(event.state));};b tiaozhuan</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/test/demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/test/demo/</guid>
+      <description>Title头部submit</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/test/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/test/test/</guid>
+      <description>Coffee Beveraqes--内容window.iFrameChanges = -1; //will get incremented to 0 on first page load</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/javascript/demo/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/javascript/demo/test/</guid>
+      <description>test fetch</description>
+    </item>
+    
+  </channel>
+</rss>

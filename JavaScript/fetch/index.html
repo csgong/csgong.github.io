@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="description" content="My Learn Notes">
+<meta name="author" content="csgong">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>fetch :: My Learn Notes</title>
+
+    
+    <link href="/css/nucleus.css?1583301413" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1583301413" rel="stylesheet">
+    <link href="/css/hybrid.css?1583301413" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1583301413" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1583301413" rel="stylesheet">
+    <link href="/css/auto-complete.css?1583301413" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1583301413" rel="stylesheet">
+    <link href="/css/theme.css?1583301413" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1583301413" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1583301413" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1583301413"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/javascript/fetch/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+	<span class="logo-title">Sinclair's Blog</span>
+
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1583301413"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1583301413"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/csgong.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1583301413"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/readed-articles/" title="已读文章" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/readed-articles/">
+          已读文章
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/readed-articles/css-list/" title="JavaScript相关文章" class="dd-item ">
+        <a href="/readed-articles/css-list/">
+        JavaScript相关文章
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/readed-articles/js-list/" title="JavaScript相关文章" class="dd-item ">
+        <a href="/readed-articles/js-list/">
+        JavaScript相关文章
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/csshtml/" title="CSS&amp;HTML" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/csshtml/">
+          CSS&amp;HTML
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/csshtml/css/" title="CSS基础" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/csshtml/css/">
+          CSS基础
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/css/flex-layout/" title="Flex 布局" class="dd-item ">
+        <a href="/csshtml/css/flex-layout/">
+        Flex 布局
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/css/pseudo-classes/" title="伪类" class="dd-item ">
+        <a href="/csshtml/css/pseudo-classes/">
+        伪类
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/css/hacks/" title="各种css hack" class="dd-item ">
+        <a href="/csshtml/css/hacks/">
+        各种css hack
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/css/base/" title="基础" class="dd-item ">
+        <a href="/csshtml/css/base/">
+        基础
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/css/properties/" title="属性" class="dd-item ">
+        <a href="/csshtml/css/properties/">
+        属性
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/css/layout/" title="布局" class="dd-item ">
+        <a href="/csshtml/css/layout/">
+        布局
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/css/box-model/" title="盒模型" class="dd-item ">
+        <a href="/csshtml/css/box-model/">
+        盒模型
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/css/selectors/" title="选择器" class="dd-item ">
+        <a href="/csshtml/css/selectors/">
+        选择器
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/csshtml/html/" title="HTML基础" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/csshtml/html/">
+          HTML基础
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/html/window/" title="window" class="dd-item ">
+        <a href="/csshtml/html/window/">
+        window
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/html/element/" title="元素" class="dd-item ">
+        <a href="/csshtml/html/element/">
+        元素
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/html/01/" title="" class="dd-item ">
+        <a href="/csshtml/html/01/">
+        
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/test/a/" title="" class="dd-item ">
+        <a href="/csshtml/test/a/">
+        
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/test/b/" title="" class="dd-item ">
+        <a href="/csshtml/test/b/">
+        
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/test/demo/" title="" class="dd-item ">
+        <a href="/csshtml/test/demo/">
+        
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/csshtml/test/test/" title="" class="dd-item ">
+        <a href="/csshtml/test/test/">
+        
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/english/" title="IT相关的English" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/english/">
+          IT相关的English
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/english/common_english_word/" title="常见的单词" class="dd-item ">
+        <a href="/english/common_english_word/">
+        常见的单词
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/english/english_word_from_article/" title="从文章中获取的单词" class="dd-item ">
+        <a href="/english/english_word_from_article/">
+        从文章中获取的单词
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/javascript/" title="JavaScript" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/javascript/">
+          JavaScript
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/javascript/fetch/" title="fetch" class="dd-item active">
+        <a href="/javascript/fetch/">
+        fetch
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/javascript/demo/test/" title="" class="dd-item ">
+        <a href="/javascript/demo/test/">
+        
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/npm/" title="JavaScript" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/npm/">
+          JavaScript
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/vue/" title="Vue" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vue/">
+          Vue
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/chrome/" title="Chromes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/chrome/">
+          Chromes
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/chrome/chrome-dev-tips/" title="Chrome Dev Tips" class="dd-item ">
+        <a href="/chrome/chrome-dev-tips/">
+        Chrome Dev Tips
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/other/" title="Others" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/other/">
+          Others
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/other/awesomes/" title="Good Software" class="dd-item ">
+        <a href="/other/awesomes/">
+        Good Software
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/other/plans-for-2020/" title="Plan for 2020" class="dd-item ">
+        <a href="/other/plans-for-2020/">
+        Plan for 2020
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+   
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn" data-icon="octicon-star" data-show-count="true" aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Sinclair's Blog</a> > <a href='/javascript/'>JavaScript</a> > fetch
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#一请求request">一.请求request</a>
+      <ul>
+        <li><a href="#1header">1.header</a></li>
+        <li><a href="#2请求数据类型content-type">2.请求数据类型（content-type）</a></li>
+        <li><a href="#3跨域">3.跨域</a></li>
+        <li><a href="#4凭据credentials">4.凭据（credentials）</a></li>
+      </ul>
+    </li>
+    <li><a href="#二响应response">二.响应response</a>
+      <ul>
+        <li><a href="#1-常用属性">1 常用属性</a></li>
+        <li><a href="#2-如果判断请求是否成功">2 如果判断请求是否成功</a></li>
+        <li><a href="#3-body">3 body</a></li>
+        <li><a href="#4-解析响应">4 解析响应</a></li>
+      </ul>
+    </li>
+    <li><a href="#三终止请求">三.终止请求</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              fetch
+            </h1>
+          
+
+        
+
+
+
+<p>fetch是HTML5提供的新的加载资源的方法，相对于XMLHttpRequest，fetch更加强大和灵活。</p>
+<h2 id="一请求request">一.请求request</h2>
+<p>fetch方法的语法为 fetch(input,[init]),fetch方法内部会使用这两个参数构造
+Request对象，所以可以简单的将fetch语法理解为fetch(Request request)。</p>
+<p>fetch方法使用Request对象请求资源，Request对象的构造方法为Request(input,[init])，
+input可以是资源地址，也可以是Request对象，init是可选的参数对象，如果input为Request对象，则init会和input对象的属性合并。
+一个简单的fetch请求如下所示：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;demo.json&#39;</span>)
+  .<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">response</span>) {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+  })
+  .<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">myJson</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">myJson</span>);
+  });
+</code></pre></div><p>带配置的请求：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;demo.json&#39;</span>,{
+     <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;POST&#34;</span>,
+})
+  .<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">response</span>) {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+  })
+  .<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">myJson</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">myJson</span>);
+  });
+</code></pre></div><p>使用Request对象构造请求</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">req</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Request</span>(<span style="color:#e6db74">&#39;demo.json&#39;</span>,{
+    <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;post&#34;</span>
+});
+
+<span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">req</span>,{
+     <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;POST&#34;</span>,
+})
+  .<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">response</span>) {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>();
+  })
+  .<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">myJson</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">myJson</span>);
+  });
+</code></pre></div><h3 id="1header">1.header</h3>
+<p>header是http请求的头部，可以使用init设置请求的头部信息。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">init</span> <span style="color:#f92672">=</span> {
+     <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+          <span style="color:#e6db74">&#39;content-type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;application/json&#39;</span>,
+          <span style="color:#e6db74">&#39;Content-Length&#39;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;10&#39;</span>
+     }
+}
+</code></pre></div><p>也可以使用Headers对象来创建一个你自己的 headers 对象</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">headers</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Headers</span>();
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>;
+<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#34;Content-Type&#34;</span>, <span style="color:#e6db74">&#34;text/plain&#34;</span>);
+<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#34;Content-Length&#34;</span>, <span style="color:#a6e22e">content</span>.<span style="color:#a6e22e">length</span>.<span style="color:#a6e22e">toString</span>());
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">init</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">headers</span>};
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;Content-Type&#34;</span>)); <span style="color:#75715e">// true
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">has</span>(<span style="color:#e6db74">&#34;Set-Cookie&#34;</span>)); <span style="color:#75715e">// false
+</span></code></pre></div><h3 id="2请求数据类型content-type">2.请求数据类型（content-type）</h3>
+<h4 id="21-json请求">2.1 JSON请求</h4>
+<p>如果要发送json请求，需要将<code>header</code>的<code>Content-Type</code>设置为<code>application/json</code>,
+JSON请求的参数需要做JSON序列化处理，使用<code>JSON.stringify</code>方式实现</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;demo.json&#39;</span>,{
+     <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;POST&#34;</span>,
+     <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+        <span style="color:#e6db74">&#39;content-type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;application/json&#39;</span>,
+     },
+     <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span><span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>({
+        <span style="color:#a6e22e">paramName</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;paramValue&#34;</span>
+     })
+})
+</code></pre></div><h4 id="22-表单请求">2.2 表单请求</h4>
+<p>如果要发送表单请求，需要将<code>header</code>的<code>Content-Type</code>设置为<code>application/x-www-form-urlencoded</code>,
+表单请求的参数需要序列化处理，可以使用URLSearchParams对象实现。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">searchParams</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URLSearchParams</span>();
+<span style="color:#a6e22e">searchParams</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#34;paramName&#34;</span>,<span style="color:#e6db74">&#34;paramValue&#34;</span>);
+
+<span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;demo.json&#39;</span>,{
+     <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;POST&#34;</span>,
+     <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+        <span style="color:#e6db74">&#39;content-type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;application/x-www-form-urlencoded&#39;</span>,
+     },
+     <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span><span style="color:#a6e22e">searchParams</span>
+})
+</code></pre></div><p>URLSearchParams对象也可以使用FormData构造</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">formData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FormData</span>();
+<span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#34;paramName&#34;</span>,<span style="color:#e6db74">&#34;paramValue&#34;</span>)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">searchParams</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URLSearchParams</span>(<span style="color:#a6e22e">formData</span>);
+</code></pre></div><h4 id="23-multipart请求">2.3 multipart请求</h4>
+<p>如果要发送表单请求，需要将<code>header</code>的<code>Content-Type</code>设置为<code>multipart/form-data</code>,
+multipart请求的参数可以使用FormData传递。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">formData</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">FormData</span>();
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">photos</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#34;input[type=&#39;file&#39;][multiple]&#34;</span>);
+
+<span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#39;title&#39;</span>, <span style="color:#e6db74">&#39;My Vegas Vacation&#39;</span>);
+<span style="color:#a6e22e">formData</span>.<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#39;photos&#39;</span>, <span style="color:#a6e22e">photos</span>.<span style="color:#a6e22e">files</span>);
+
+<span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;demo/server&#39;</span>, {
+  <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;POST&#39;</span>,
+  <span style="color:#a6e22e">body</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">formData</span>
+})
+</code></pre></div><h3 id="3跨域">3.跨域</h3>
+<p>fetch支持跨域请求，请求配置属性mode有三个值分别如下：</p>
+<ul>
+<li>
+<p>no-cors</p>
+<p>该模式用于跨域请求但是服务器不带CORS响应头，也就是服务端不支持CORS；这也是fetch的特殊跨域请求方式；其对应的response 
+type为opaque,这种情况下是无法读取response body内容的。</p>
+</li>
+<li>
+<p>cors</p>
+<p>该模式支持跨域请求，顾名思义它是以CORS的形式跨域；当然该模式也可以同域请求不需要后端额外的CORS支持；其对应的response 
+type为cors</p>
+</li>
+<li>
+<p>same-origin</p>
+<p>该模式是不允许跨域的，它需要遵守同源策略，否则浏览器会返回一个error告知不能跨域；其对应的response type为basic</p>
+</li>
+</ul>
+<h3 id="4凭据credentials">4.凭据（credentials）</h3>
+<p>fetch默认请求时是不包含凭据的，如果想发送包含凭据的请求（即使是跨域源），要将credentials: 设置为include，
+如果只想同源下携带凭据，则要将credentials: 设置为same-origin。</p>
+<p>如果credentials的值为include，则服务端的响应头部Access-Control-Allow-Origin属性不能设置为*，需要设置具体的域，并且
+服务端的响应头部Access-Control-Allow-Credentials属性要设置为true.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//server
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;http&#39;</span>).<span style="color:#a6e22e">createServer</span>((<span style="color:#a6e22e">req</span>,<span style="color:#a6e22e">res</span>)=&gt;{
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">writeHead</span>(<span style="color:#ae81ff">200</span>,{
+        <span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;http://localhost:63342&#39;</span>,
+        <span style="color:#e6db74">&#39;Access-Control-Allow-Credentials&#39;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;true&#39;</span>,
+
+    })
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">end</span>(<span style="color:#e6db74">&#39;{&#34;msg&#34;:&#34;hello&#34;}&#39;</span>)
+}).<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">3000</span>,<span style="color:#e6db74">&#39;127.0.0.1&#39;</span>)
+
+<span style="color:#75715e">//client
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">fetch</span>(<span style="color:#a6e22e">req</span>,{
+    <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+        <span style="color:#e6db74">&#39;content-type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;application/x-www-form-urlencoded&#39;</span>
+    },
+    <span style="color:#a6e22e">credentials</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;include&#39;</span>,
+    <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;POST&#39;</span>,
+    <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;cors&#34;</span>
+})
+</code></pre></div><h2 id="二响应response">二.响应response</h2>
+<p>Response 实例是在 fetch() 处理完promises之后返回的。</p>
+<h3 id="1-常用属性">1 常用属性</h3>
+<p>常见的Response属性有：</p>
+<ul>
+<li>status</li>
+</ul>
+<p>整数(默认值为200) 为response的状态码</p>
+<ul>
+<li>statusText</li>
+</ul>
+<p>字符串(默认值为&quot;OK&rdquo;),该值与HTTP状态码消息对应</p>
+<ul>
+<li>ok</li>
+</ul>
+<p>该属性是来检查response的状态是否在200-299(包括200,299)这个范围内.该属性返回一个Boolean值</p>
+<ul>
+<li>headers</li>
+</ul>
+<p>服务端响应头部信息</p>
+<h3 id="2-如果判断请求是否成功">2 如果判断请求是否成功</h3>
+<p>fetch请求成功与否，并不完全取决于返回的Promise的状态是否为reject，因为只有网络故障时或请求被阻止时，Promise的状态才为reject，
+其他情况下全部是resolve，不管HTTP状态是否成功，例如常见的404和500错误等都会为resolve，由于这个原因，要想判断请求是否成功，除了Promise的状态外
+还要通过Response的ok属性是否为true,例如：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">handleResponse</span>(<span style="color:#a6e22e">response</span>) {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">json</span>()
+        .<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">json</span>) =&gt; {
+            <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">ok</span>) {
+                <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">error</span> <span style="color:#f92672">=</span> Object.<span style="color:#a6e22e">assign</span>({}, <span style="color:#a6e22e">json</span>, {
+                    <span style="color:#a6e22e">status</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">status</span>,
+                    <span style="color:#a6e22e">statusText</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">statusText</span>,
+                });
+
+                <span style="color:#66d9ef">return</span> Promise.<span style="color:#a6e22e">reject</span>(<span style="color:#a6e22e">error</span>);
+            }
+            <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">json</span>;
+        });
+}
+
+</code></pre></div><h3 id="3-body">3 body</h3>
+<p>Body是fetch的响应/请求的正文，Body被Request和Response实现，方便处理请求正文和解析响应正文。</p>
+<p>它有如下方法可以被使用：</p>
+<ul>
+<li>arrayBuffer() 将正文解析成ArrayBuffer</li>
+<li>blob() 将正文解析成Blob</li>
+<li>formData() 将正文解析成FormData</li>
+<li>json() 将正文解析成JSON</li>
+<li>text() 将正文解析成text</li>
+</ul>
+<h3 id="4-解析响应">4 解析响应</h3>
+<p>Response可以返回多种类型，为了正确解析，可以检查返回的头部，确定返回类型，然后调用响应方法解析响应正文。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#34;demo.json&#34;</span>)
+  .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">res</span> =&gt; {
+    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;content-type&#34;</span>) <span style="color:#f92672">&amp;&amp;</span>
+       <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;content-type&#34;</span>).<span style="color:#a6e22e">toLowerCase</span>().<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;application/json&#34;</span>) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>) {
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>()
+    } <span style="color:#66d9ef">else</span> {
+      <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">TypeError</span>()
+    }
+  })
+</code></pre></div><p>如果你想逐步解析响应内容，可以这样做：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">consume</span>(<span style="color:#a6e22e">reader</span>) {
+  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">pump</span>()
+  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">pump</span>() {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">reader</span>.<span style="color:#a6e22e">read</span>().<span style="color:#a6e22e">then</span>(({<span style="color:#a6e22e">done</span>, <span style="color:#a6e22e">value</span>}) =&gt; {
+      <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">done</span>) {
+        <span style="color:#66d9ef">return</span>
+      }
+      <span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">byteLength</span>
+      <span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`</span><span style="color:#e6db74">received </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">value</span>.<span style="color:#a6e22e">byteLength</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> bytes (</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">total</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> bytes in total)</span><span style="color:#e6db74">`</span>)
+      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">pump</span>()
+    })
+  }
+}
+
+<span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#34;/music/pk/altes-kamuffel.flac&#34;</span>)
+  .<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">res</span> =&gt; <span style="color:#a6e22e">consume</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">getReader</span>()))
+  .<span style="color:#a6e22e">then</span>(() =&gt; <span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;consumed the entire body without keeping the whole thing in memory!&#34;</span>))
+  .<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">e</span> =&gt; <span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;something went wrong: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">e</span>))
+</code></pre></div><h2 id="三终止请求">三.终止请求</h2>
+<p>fetch方法中的signal配置用来终止请求，signal是一个AbortSignal对象，AbortSignal对象有如下属性：</p>
+<ul>
+<li>
+<p>aborted</p>
+<p>属性aborted标识请求是否终止，当aborted由false转变为true时，请求终止，</p>
+</li>
+<li>
+<p>onabort</p>
+<p>属性可以用来监听请求终止事件。</p>
+</li>
+</ul>
+<p>AbortSignal对象可以通过AbortController对象的signal属性来创建，AbortController的属性如下：</p>
+<ul>
+<li>
+<p>signal</p>
+<p>属性signal是AbortSignal的实例，用于fetch请求时的signal配置</p>
+</li>
+<li>
+<p>abort</p>
+<p>方法abort用于终止请求，调用后，signal属性aborted的状态转变为true。</p>
+</li>
+</ul>
+<p>一个请求终止的例子如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">controller</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AbortController</span>();
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">signal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">controller</span>.<span style="color:#a6e22e">signal</span>;
+<span style="color:#a6e22e">signal</span>.<span style="color:#a6e22e">onabort</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">e</span>)=&gt;{
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;request aborted&#34;</span>);
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">reqTime</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">setTimeout</span>(()=&gt;{
+   <span style="color:#a6e22e">controller</span>.<span style="color:#a6e22e">abort</span>(); 
+},<span style="color:#ae81ff">1000</span>);
+
+<span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#34;demo.json&#34;</span>,{<span style="color:#a6e22e">signal</span>}).<span style="color:#a6e22e">then</span>(()=&gt;{
+    <span style="color:#a6e22e">clearTimeout</span>(<span style="color:#a6e22e">reqTime</span>);
+});
+</code></pre></div>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/javascript/" title="JavaScript"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/javascript/demo/test/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1583301413"></script>
+    <script src="/js/perfect-scrollbar.min.js?1583301413"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1583301413"></script>
+    <script src="/js/jquery.sticky.js?1583301413"></script>
+    <script src="/js/featherlight.min.js?1583301413"></script>
+    <script src="/js/highlight.pack.js?1583301413"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1583301413"></script>
+    <script src="/js/learn.js?1583301413"></script>
+    <script src="/js/hugo-learn.js?1583301413"></script>
+
+    <link href="/mermaid/mermaid.css?1583301413" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1583301413"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105947713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
+

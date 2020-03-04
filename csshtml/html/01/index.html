@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        
+        function supports_microdata_api() {
+            return !!document.getItems;
+        }
+        window.onload=function(){
+            if(supports_microdata_api){
+                
+                var user = document.getItems('http://data-vocabulary.org/Person')[0];
+                alert('Hi,I am ' + user.properties['name'][0].itemValue + '!');
+            }
+        }
+    </script>
+</head>
+<body>
+<section itemscope itemtype="http://data-vocabulary.org/Person">
+    <h1 itemprop="name">nanpingwanzhong</h1>
+    <p><img itemprop="photo" src="http://pic.cnitblog.com/avatar/a386062.bmp?id=14155921"></p>
+    <a itemprop="url" href="http://www.cnblogs.com/nanpingwanzhong/">My Blog</a>
+</section>
+</body>
+</html>

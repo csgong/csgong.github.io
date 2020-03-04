@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS&amp;HTML on My Learn Notes</title>
+    <link>https://csgong.github.io/csshtml/</link>
+    <description>Recent content in CSS&amp;HTML on My Learn Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://csgong.github.io/csshtml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/test/a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/test/a/</guid>
+      <description>Titlewindow.onpopstate = function(event) {alert(&#34;location: &#34; + document.location + &#34;, state: &#34; + JSON.stringify(event.state));};a tiaozhuan</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/test/b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/test/b/</guid>
+      <description>Titlewindow.onpopstate = function(event) {alert(&#34;location: &#34; + document.location + &#34;, state: &#34; + JSON.stringify(event.state));};b tiaozhuan</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/test/demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/test/demo/</guid>
+      <description>Title头部submit</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/test/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/test/test/</guid>
+      <description>Coffee Beveraqes--内容window.iFrameChanges = -1; //will get incremented to 0 on first page load</description>
+    </item>
+    
+  </channel>
+</rss>

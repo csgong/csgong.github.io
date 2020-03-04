@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT相关的English on My Learn Notes</title>
+    <link>https://csgong.github.io/english/</link>
+    <description>Recent content in IT相关的English on My Learn Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://csgong.github.io/english/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>常见的单词</title>
+      <link>https://csgong.github.io/english/common_english_word/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/english/common_english_word/</guid>
+      <description>##</description>
+    </item>
+    
+    <item>
+      <title>从文章中获取的单词</title>
+      <link>https://csgong.github.io/english/english_word_from_article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/english/english_word_from_article/</guid>
+      <description>-ish 该词来源于我对“函数是一等公民”的来源搜索中看到的，意思为有一點、一點點、（時間或數目上）&amp;hellip;多， 当人们对某件事吃不准，或不愿直说的情况下的可以用它表示。
+用法：接在形容詞、名詞、片語等後面都可以，有時甚至單獨用。
+發音：跟 &amp;ldquo;childish&amp;rdquo;, &amp;ldquo;foolish&amp;rdquo; 後面的 &amp;ldquo;ish&amp;rdquo; 發音一樣。
+例子：
+A: Hungry? （餓嗎？）B: Yeah, ish. （嗯，一點點。）A: When is the party? （party幾點開始啊？）B: 8-ish, I think. （我想八點多吧）A: How many people are going? （多少人要去？）B: I don&amp;#39;t know, 30ish, maybe? （不知道，大概30幾個吧）</description>
+    </item>
+    
+  </channel>
+</rss>

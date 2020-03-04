@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML基础 on My Learn Notes</title>
+    <link>https://csgong.github.io/csshtml/html/</link>
+    <description>Recent content in HTML基础 on My Learn Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://csgong.github.io/csshtml/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>window</title>
+      <link>https://csgong.github.io/csshtml/html/window/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/html/window/</guid>
+      <description>Base64 utility methods The atob() and btoa() methods allow developers to transform content to and from the base64 encoding.
+ atob() base64 to text btoa() text to text base64  </description>
+    </item>
+    
+    <item>
+      <title>元素</title>
+      <link>https://csgong.github.io/csshtml/html/element/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/html/element/</guid>
+      <description>html html文档的根元素，可以通过document.documentElement获取到html元素。
+特有属性:
+ lang 推荐html元素要指定lang属性 manifest manifest属性用于缓存  head document的元数据集合，包含 base，link，meta，noscript，script，style，template，title，其中base和title不多于一个，可以通过document.head获取到head元素。
+title document的标题或名称,可以通过document.title来设置title
+base base用于指定document中所有的链接的默认browsing context。每个文档中不得包含多个 base 元素。
+属性:
+ href 规定页面中所有相对链接的基准URL,这其中包括、、、标签中的URL target 在何处打开页面中所有的链接,可选的值有_blank，_self，_top，_framename  &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;This is an example for the &amp;amp;lt;base&amp;amp;gt; element&amp;lt;/title&amp;gt;&amp;lt;base href=&amp;#34;https://www.example.com/news/index.html&amp;#34; target=&amp;#34;_self&amp;#34;&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;link1 &amp;lt;a href=&amp;#34;archives.html&amp;#34;&amp;gt;link1&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;link2 &amp;lt;a href=&amp;#34;https://www.aaa.com&amp;#34;&amp;gt;link2&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;上面例子中link1的链接地址是 &amp;ldquo;https://www.example.com/news/archives.html&amp;quot;, link2由于是绝对地址，所以它的地址没有变化，还是https://www.aaa.com，link1和link2的打开方式都是_self。 _blank, _self, _parent, or _top
+q &amp;amp; blockquote &amp;amp; cite &amp;lt;q&amp;gt;（quotation）是inline元素，适用短引用，默认会渲染成带有“”的一小段文字
+&amp;lt;blockquote&amp;gt;是block元素，适用长的引用。&amp;lt;blockquote&amp;gt;默认会想染成带有缩进的单独一段内容
+&amp;lt;cite&amp;gt; 标签通常表示它所包含的文本对某个参考文献的引用，比如书籍或者杂志的标题。 按照惯例，引用的文本将以斜体显示,例如：</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/csshtml/html/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/csshtml/html/01/</guid>
+      <description>//判断浏览器是否支持 Microdata APIfunction supports_microdata_api() {return !!document.getItems;}window.onload=function(){if(supports_microdata_api){//访问Microdata DOM APIvar user = document.getItems(&#39;http://data-vocabulary.org/Person&#39;)[0];alert(&#39;Hi,I am &#39; + user.properties[&#39;name&#39;][0].itemValue + &#39;!&#39;);}}nanpingwanzhongMy Blog</description>
+    </item>
+    
+  </channel>
+</rss>

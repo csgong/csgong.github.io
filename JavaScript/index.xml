@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on My Learn Notes</title>
+    <link>https://csgong.github.io/javascript/</link>
+    <description>Recent content in JavaScript on My Learn Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://csgong.github.io/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>fetch</title>
+      <link>https://csgong.github.io/javascript/fetch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/javascript/fetch/</guid>
+      <description>fetch是HTML5提供的新的加载资源的方法，相对于XMLHttpRequest，fetch更加强大和灵活。
+一.请求request fetch方法的语法为 fetch(input,[init]),fetch方法内部会使用这两个参数构造 Request对象，所以可以简单的将fetch语法理解为fetch(Request request)。
+fetch方法使用Request对象请求资源，Request对象的构造方法为Request(input,[init])， input可以是资源地址，也可以是Request对象，init是可选的参数对象，如果input为Request对象，则init会和input对象的属性合并。 一个简单的fetch请求如下所示：
+fetch(&amp;#39;demo.json&amp;#39;).then(function(response) {return response.json();}).then(function(myJson) {console.log(myJson);});带配置的请求：
+fetch(&amp;#39;demo.json&amp;#39;,{method:&amp;#34;POST&amp;#34;,}).then(function(response) {return response.json();}).then(function(myJson) {console.log(myJson);});使用Request对象构造请求
+const req = Request(&amp;#39;demo.json&amp;#39;,{method:&amp;#34;post&amp;#34;});fetch(req,{method:&amp;#34;POST&amp;#34;,}).then(function(response) {return response.json();}).then(function(myJson) {console.log(myJson);});1.header header是http请求的头部，可以使用init设置请求的头部信息。
+const init = {headers: {&amp;#39;content-type&amp;#39;: &amp;#39;application/json&amp;#39;,&amp;#39;Content-Length&amp;#39;:&amp;#39;10&amp;#39;}}也可以使用Headers对象来创建一个你自己的 headers 对象
+let headers = new Headers();let content = &amp;#34;Hello World&amp;#34;;headers.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://csgong.github.io/javascript/demo/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://csgong.github.io/javascript/demo/test/</guid>
+      <description>test fetch</description>
+    </item>
+    
+  </channel>
+</rss>
